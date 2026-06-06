@@ -4,12 +4,9 @@ function TimeDate(){
   let currentDate = now.toLocaleDateString();
   
     return(
-      <div className="text-center">
-      <div className="container">
-        <p><b>Date:</b> {currentDate}</p>
-        <p><b>Time:</b> {currentTime}</p>
+      <div className="text-center lead">
+        <p>this is the current time:  {currentDate}- {currentTime} </p>
       </div>
-    </div>
     )
 }
 
