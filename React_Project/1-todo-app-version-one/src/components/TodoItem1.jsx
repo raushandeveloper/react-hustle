@@ -12,7 +12,7 @@ function TodoItem1(){
             {TodoDate}
           </div>
           <div className="col-2">
-            <button type="button" class="btn btn-danger">Add</button>
+            <button type="button" class="btn btn-danger">delete</button>
           </div>
         </div>
     </div>
