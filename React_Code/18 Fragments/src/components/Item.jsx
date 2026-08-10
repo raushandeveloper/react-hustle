@@ -1,7 +1,8 @@
 import styles from "./Item.module.css";
 
 const Item = ({ foodItem }) => {
-  const handleBuyButtonClicked = () => {
+  const handleBuyButtonClicked = (event) => {
+    console.log(event);
     console.log(`${foodItem} being bought `);
   };
 
@@ -12,7 +13,7 @@ const Item = ({ foodItem }) => {
         {foodItem}
       </span>
       <button className={`${styles.button} btn btn-info`}
-      onClick={handleBuyButtonClicked}
+      onClick={(event)=> handleBuyButtonClicked(event)}
       >Buy</button>
     </li>
   ); 

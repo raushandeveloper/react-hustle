@@ -4,6 +4,7 @@ import Container from "./components/Container";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import FoodInput from "./components/FoodInput";
 
 function App() {
   // let foodItems = [];
@@ -14,6 +15,7 @@ function App() {
   <h1 className="food-heading">Healthy Food</h1>
   <ErrorMessage items={foodItems}></ErrorMessage>
     {/* {foodItems.length === 0 && <h3>I am still hungry.</h3>} */}
+    <FoodInput></FoodInput>
    <FoodItems items={foodItems}></FoodItems>
   </Container>
 
